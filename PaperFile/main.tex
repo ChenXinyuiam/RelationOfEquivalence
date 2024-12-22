@@ -37,6 +37,7 @@
 详细讲解如何利用等价关系划分状态集合，实现自动机的简化构造。通过理论与实践相结合，
 本文旨在为读者提供理解等价关系及其应用的完整视角。
 
+\newpage
 \section{理论基础}
 \subsection{等价关系的定义与性质}
     等价关系是一种二元关系$R$，若集合$A$上的二元关系$A$满足以下三个条件，称$\mathrm{R}$为等价关系:
@@ -54,7 +55,7 @@
 等价关系通过将集合元素划分为等价类，减少了问题的复杂度。在许多算法中，等价关系作为划分与合并的理论基础，为优化问题提供了强有力的支持。
 
 
-
+\newpage
 \section{等价关系的应用}
 \subsection{数学领域}
 同余关系：模运算中，整数在模 
@@ -68,11 +69,40 @@ $n$ 意义下形成的等价类，即同余类，是数论的基础工具之一�
 网络科学：在社交网络中分析等价节点的聚类特性。
 
 
+\newpage
 \section{等价关系在DFA中的应用}
 \subsection{背景介绍}
-    DFA是一种用于处理文本和计算的基本模型。在实际使用中，我们经常需要优化它，
-    以减少其所需要的状态数。这种优化过程就是状态最小化。
-\subsection{等价关系在DFA最小化的应用}
+    \textbf{DFA(deterministic finite automaton)}是一个有限状态机，通过接受由字符串唯一确定的状态序列来接受或拒绝给定的字符串
+    \textbf{有限状态自动机}$M$是一个五元组$(Q, \Sigma, \delta, q_0, F)$,包含了
+    \begin{itemize}
+        \item 有限状态$Q$
+        \item 有限输入符号$\Sigma$
+        \item 转移函数$\delta: Q \times \Sigma \mapsto Q$
+        \item 初识状态$q_0$
+        \item 可接受状态集合$F \subset Q$
+    \end{itemize}
+    当一个字符串$w = a_0a_1\cdots a_n$输入状态机中，称$w$是可接受的当且仅当状态机接受$w$后产生的序列$r_0, r_1, \cdots, r_n$满足:
+    \begin{enumerate}
+        \item $r_0 = q_0$
+        \item $r_{k+1} = \delta(r_k, q_k+1), for k = 0, 1, \ldots, n-1$
+        \item $r_n \in F$
+    \end{enumerate}
+    称所有可接受的字符串为有限状态机$M$的语言，记为$L(M)$。
+    
+    其中$\delta$通常用状态转移表和状态转移图表示, 下面以一个$M_1$为例子
+    \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.2]{Img/dfa_example.png}
+        \caption{有限状态机$M_1$的状态转移图}
+    \end{figure}
+    在有限状态机$M_1$中, $Q=\{q_0, q_1,q_2,q_3,q_4\}$, $\Sigma = \{0,1\}$, 初始状态为$q_0$
+    可接受状态的集合$F = \{q_2, q_3\}$, 其中状态转移图由双圆圈标出的状态为可接受状态
+
+
+\subsection{等价关系在DFA中的应用}
+
+\subsection{DFA最小化意义}
+
 
 \subsection{DFA最小化方法}
     状态最小化一般分为两个步骤:
@@ -94,16 +124,22 @@ $n$ 意义下形成的等价类，即同余类，是数论的基础工具之一�
 
     \textbf{步骤三}
     最后，根据分组结果，将同一组的状态合并为一个新状态，构造出一个最小化后的 DFA。
-\subsection{DFA最小化实现}
+    
+
+\subsection{DFA最小化算法}
+\subsubsection{Hopcraft算法}
+    这部分由陈新宇完成
+\subsubsection{常翰堃算法(bushi)}
+    这部分由常翰堃完成
 
 
-
-
+\newpage
 \section{总结}
 
 
 
 
+\newpage
 \section{参考文献}
 \begin{enumerate}
     \item Hopcroft, J.E.Motwani, R.Ullman, J.D.(2007). $Introduction to Automata Theory, Languages, and Computation.$
