@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.27)  22 DEC 2024 22:39
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.27)  23 DEC 2024 08:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -450,8 +450,7 @@ Package fontspec Info: Font family 'SimSun(0)' created for font 'SimSun' with
 (fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-
-No file main.aux.
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -464,7 +463,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 24.
-(d:/SoftWare/TextLive/tlpkg/TeXLive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
+ (d:/SoftWare/TextLive/tlpkg/TeXLive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 24.
@@ -540,17 +539,17 @@ LaTeX Font Warning: Font shape `TU/SimSun(0)/b/n' undefined
 ] [2] [3]
 File: ../Img/dfa_example.png Graphic file (type bmp)
 <../Img/dfa_example.png>
- [4] [5] [6]
-Overfull \hbox (164.10565pt too wide) in paragraph at lines 145--146
-[]\TU/lmr/m/n/10 Hopcroft, J.E.Motwani, R.Ullman, J.D.(2007). $\OML/cmm/m/it/10 IntroductiontoAutomataTheory; Languages; andComputation:$ 
+ [4] [5] [6] [7]
+Overfull \hbox (30.97025pt too wide) in paragraph at lines 205--206
+[]\TU/lmr/m/n/10 Hopcroft, J.E.Motwani, R.Ullman, J.D.(2007). $\OML/cmm/m/it/10 IntroductiontoAutomataTheory;$ 
  []
 
 
-Overfull \hbox (24.44858pt too wide) in paragraph at lines 146--147
+Overfull \hbox (24.44858pt too wide) in paragraph at lines 206--207
 []\TU/lmr/m/n/10 Sipser.M.(2013). $\OML/cmm/m/it/10 IntroductiontotheTheoryofComputation:CengageLearning:$ 
  []
 
-[7] (./main.aux)
+[8] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -561,12 +560,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16905 strings out of 476720
- 415373 string characters out of 5799068
- 1931842 words of memory out of 5000000
- 38673 multiletter control sequences out of 15000+600000
+ 16917 strings out of 476720
+ 415975 string characters out of 5799068
+ 1945842 words of memory out of 5000000
+ 38683 multiletter control sequences out of 15000+600000
  562635 words of font info for 70 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  84i,6n,93p,421b,245s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (7 pages).
+Output written on main.pdf (8 pages).
