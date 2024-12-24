@@ -1,12 +1,12 @@
 def hopcroft_minimization(states, alphabet, transitions, initial_state, accepting_states):
-    # Step 1: Initial partition
+    # 步骤一: 初步划分，将所有状态分为 可接受状态 和 非终止状态
     non_accepting = set(states) - set(accepting_states)
     partitions = [set(accepting_states), non_accepting]
     worklist = [set(accepting_states), non_accepting]
 
-    # Step 2: Refine partitions using worklist
+    # 步骤二: 进一步划分，找出等价类
     while worklist:
-        current = worklist.pop()
+        current = worklist.pop()  # 从worklist中取出一个集合进行划分
         for symbol in alphabet:
             affected = {state for state in states if transitions[state][symbol] in current}
             new_partitions = []
@@ -29,7 +29,7 @@ def hopcroft_minimization(states, alphabet, transitions, initial_state, acceptin
                     new_partitions.append(part)
             partitions = new_partitions
 
-    # Step 3: Create minimized DFA
+    # 步骤三: 根据划分后的集族和状态转移函数transitions构造新的
     minimized_states = [tuple(part) for part in partitions]
     minimized_transitions = {}
     for part in partitions:
