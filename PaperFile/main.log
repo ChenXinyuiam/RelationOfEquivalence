@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.27)  23 DEC 2024 08:12
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.27)  24 DEC 2024 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -539,17 +539,27 @@ LaTeX Font Warning: Font shape `TU/SimSun(0)/b/n' undefined
 ] [2] [3]
 File: ../Img/dfa_example.png Graphic file (type bmp)
 <../Img/dfa_example.png>
- [4] [5] [6] [7]
-Overfull \hbox (30.97025pt too wide) in paragraph at lines 205--206
+File: ../Img/minimized_pic.png Graphic file (type bmp)
+<../Img/minimized_pic.png>
+
+Overfull \hbox (18.88786pt too wide) in paragraph at lines 101--102
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] [5] [6] [7] [8]
+Overfull \hbox (30.97025pt too wide) in paragraph at lines 223--224
 []\TU/lmr/m/n/10 Hopcroft, J.E.Motwani, R.Ullman, J.D.(2007). $\OML/cmm/m/it/10 IntroductiontoAutomataTheory;$ 
  []
 
 
-Overfull \hbox (24.44858pt too wide) in paragraph at lines 206--207
+Overfull \hbox (24.44858pt too wide) in paragraph at lines 224--225
 []\TU/lmr/m/n/10 Sipser.M.(2013). $\OML/cmm/m/it/10 IntroductiontotheTheoryofComputation:CengageLearning:$ 
  []
 
-[8] (./main.aux)
+[9] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -560,12 +570,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16917 strings out of 476720
- 415975 string characters out of 5799068
- 1945842 words of memory out of 5000000
- 38683 multiletter control sequences out of 15000+600000
+ 16926 strings out of 476720
+ 416232 string characters out of 5799068
+ 1943842 words of memory out of 5000000
+ 38691 multiletter control sequences out of 15000+600000
  562635 words of font info for 70 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  84i,6n,93p,421b,245s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (8 pages).
+Output written on main.pdf (9 pages).
