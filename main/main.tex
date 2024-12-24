@@ -231,11 +231,28 @@ $q_2$和$q_3$,都是本身,所以$q_2$和$q_3$接受$0,1$字符后结果一致,$
 
 
 \subsection{DFA最小化算法}
-\subsubsection{Hopcraft算法}
+Hopcroft 算法是一种高效的 DFA 最小化算法，其时间复杂度为$O(n\cdot *\log n)$,是目前最优的 DFA 最小化方法之一。
+Hopcroft算法主要包括三个部分:
+\begin{enumerate}
+    \item 初始划分
+        
+    
+    将状态分为两组,分别是“接受状态集”和“非接受状态集”
 
-\subsubsection{常翰堃算法(bushi)}
-    这部分由常翰堃完成
+    \item 迭代细分 
+        1. 使用字符集$\Sigma$对每个字符状态集进行进一步划分。
+        选择一个当前的划分子集$P$, 找出哪些状态在该字符输入下会进入集合$P$,
+    
+        2. 再将集合$P$划分为两个部分$P_1$和$P_2$。
+        
+        3. 再更新划分集合,将划分后的集合加入到待划分的集合中
 
+        重复上述3步操作,直到划分不再变化        
+
+    \item 构造最小化\textbf{DFA}
+        将每一个划分子集视作一个新状态。
+        按照原始\textbf{DFA}的转移关系，更新新\textbf{DFA}的状态转移表和转移图
+\end{enumerate}
 
 \newpage
 \section{总结}
