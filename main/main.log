@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.27)  24 DEC 2024 21:05
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.27)  25 DEC 2024 22:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -562,12 +562,12 @@ File: ../Img/minimized_dfa_example.png Graphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7] [8] [9]
-Overfull \hbox (30.97025pt too wide) in paragraph at lines 288--289
+Overfull \hbox (30.97025pt too wide) in paragraph at lines 290--291
 []\TU/lmr/m/n/10 Hopcroft, J.E.Motwani, R.Ullman, J.D.(2007). $\OML/cmm/m/it/10 IntroductiontoAutomataTheory;$ 
  []
 
 
-Overfull \hbox (24.44858pt too wide) in paragraph at lines 289--290
+Overfull \hbox (24.44858pt too wide) in paragraph at lines 291--292
 []\TU/lmr/m/n/10 Sipser.M.(2013). $\OML/cmm/m/it/10 IntroductiontotheTheoryofComputation:CengageLearning:$ 
  []
 
